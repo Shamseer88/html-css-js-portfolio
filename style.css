@@ -358,6 +358,46 @@ section {
     border-radius: 50%;
     color: var(--mainBlue);
 }
+
+/* Education div */
 #education {
-    height: 750px;
+    margin-top: 75px;
+}
+.education-info {
+    display: flex;
+    gap: 75px;
+}
+.education-info h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.education-info p {
+    color: #888888;
+    font-size: 14px;
+}
+
+/* Portfolio section */
+.portfolio-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+.portfolio-card {
+    text-align: center;
+    cursor: pointer;
+    border-radius: 15px;
+}
+.portfolio-card img {
+    width: 275px;
+    border-radius: 15px 15px 0 0;
+    padding-bottom: 0px;
+    background-color: lightgray;
+}
+.portfolio-info {
+    width: 275px;
+    margin: auto;
+    border-radius: 0 0 15px 15px;
+    background-color: lightgray;
+    padding: 10px 0;
 }
