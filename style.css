@@ -1,0 +1,363 @@
+/* Google font */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --mainBlue: #4A63E7;
+    --theOrange: #FF5959;
+    --mainBg: #E7E7E7;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--mainBg);
+}
+
+
+main {
+    width: 90%;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    font-family: 'Open Sans', sans-serif;
+}
+/* Sidebar styling */
+.sidebar {
+    height: 90vh;
+    width: 300px;
+    background-color: var(--mainBlue);
+    margin: 50px;
+    padding: 50px 0 50px 50px; 
+    border-radius: 30px;   
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    position: fixed;
+}
+.profile-pic {
+    width: 100px;
+    border-radius: 50%;
+}
+.info {
+    margin-top: 25px;
+    color: white;
+}
+.info h2 {
+    font-size: 28px;
+    font-weight: 700;
+    padding-bottom: 5px;
+}
+.info h2 span {
+    color: var(--theOrange);
+}
+.info p {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.menu {
+    padding: 30px 0;
+}
+.menu ul {
+    list-style: none;
+    text-align: left;
+}
+.menu ul li {
+    text-align: left;
+    padding-bottom: 15px;
+    transition: transform 0.2s ease;
+}
+.menu ul li:hover {
+    transform: translateX(5px);
+}
+.menu ul li a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+}
+.menu ul li a i {
+    padding-right: 15px;
+    font-size: 14px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 30px;
+    text-align: center;
+}
+.social-icons {
+    margin-bottom: 20px;
+}
+.social-icons a{
+    color: white;
+    margin-right: 10px;
+    padding: 5px 10px;
+    font-size: 20px;
+    background-color: var(--theOrange);
+    border-radius: 50%;
+}
+.social-icons a:hover {
+    color: var(--theOrange);
+    background-color: #fff;
+    transition: 0.3s;
+}
+.footer p {
+    color: var(--mainBg);
+    font-size: 12px;
+}
+
+/* Container styling */
+.container {
+    margin-left: 400px;
+    margin-top: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    width: 90%;
+    border-radius: 30px;
+    scroll-behavior: smooth;
+}
+/* Home section */
+#home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    flex-direction: column;
+    background: url(images/home-bg.png) var(--mainBlue);
+    background-size: cover;
+    background-blend-mode: multiply;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-bottom: 50px;
+}
+#home h1 {
+    color: white;
+    font-size: 60px;
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+}
+#home p {
+    text-align: left;
+}
+#home .home-info p {
+    color: white;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+.download-resume{
+    padding: 12px 26px;
+    border-radius: 25px;
+    border: none;
+    color: white;
+    background-color: var(--theOrange);
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    margin-right: 15px;
+}
+.download-resume i {
+    margin-right: 5px;
+}
+.download-resume:hover {
+    background-color: var(--mainBlue);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 10px;
+    scale: 1.02;
+    transition: 0.3s;
+}
+.hire-me {
+    padding: 10px 26px;
+    background-color: var(--mainBlue);
+    border-radius: 25px;
+    border: none;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    border: 1px solid white;
+    color: white;
+}
+.hire-me i {
+    margin-right: 5px;
+}
+.hire-me:hover {
+    background-color: white;
+    color: var(--mainBlue);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 10px;
+    scale: 1.02;
+    transition: 0.3s;
+}
+
+/* About section */
+#about {
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 75px;
+    margin-bottom: 50px;
+}
+
+.about-image img {
+    width: 150px;
+    border-radius: 50%;
+    margin-top: 50px;
+}
+.sub-heading {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    margin-bottom: 20px
+}
+.dividor {
+    height: 4px;
+    width: 40px;
+    background-color: var(--theOrange);
+    border-radius: 30px;
+    margin-bottom: 30px;
+}
+.about-info-div {
+    display: flex;
+    gap: 50px;
+}
+.about-info {
+    margin-top: 50px;
+}
+.about-info h2 {
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 25px;
+}
+.about-info .about-me-description {
+    font-size: 14px;
+    color: #888888;
+    margin-bottom: 30px;
+}
+.personal-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.personal-info p {
+    font-size: 14px;
+    color: black;
+}
+.personal-info p span {
+    color: #888888
+}
+.about-buttons-div {
+    margin-top: 30px;
+}
+.view-portfolio {
+    padding: 12px 26px;
+    border-radius: 25px;
+    border: none;
+    color: white;
+    background-color: var(--theOrange);
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    margin-right: 15px;
+}
+.view-portfolio:hover {
+        background-color: var(--mainBlue);
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 10px;
+        scale: 1.02;
+        transition: 0.3s
+}
+.view-portfolio i {
+    margin-right: 5px;
+}
+.hire-me-about {
+    padding: 10px 26px;
+    background-color: var(--mainBlue);
+    border-radius: 25px;
+    border: none;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    color: white;
+}
+.hire-me-about i {
+    margin-right: 5px;
+}
+.hire-me-about:hover {
+    background-color: var(--theOrange);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 10px;
+    scale: 1.02;
+    transition: 0.3s;
+}
+
+/* My skills section */
+section {
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 75px;
+    margin-bottom: 50px;
+}
+.paragraph {
+    font-size: 14px;
+    color: #888888;
+    margin-bottom: 30px;
+}
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+}
+.skill-progress {
+    display: flex;
+    justify-content: space-between;
+}
+.skill-progress h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+}
+.skill-progress p{
+    color: #888888;
+    font-size: 14px;
+}
+.outer-line {
+    margin-top: 10px;
+    height: 4px;
+    background-color: #E7E7E7;
+    border-radius: 30px;
+}
+.inner-line{
+    background-color: var(--theOrange);
+    height: 4px;
+    border-radius: 30px;
+}
+.html {
+    width: 75%;
+}
+.css {
+    width:  70%;
+}
+.js {
+    width: 65%;
+}
+.wp {
+    width:  65%;
+}
+.skill-logos {
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 30px 0;
+}
+.skill-logos i {
+    font-size: 100px;
+    border-radius: 50%;
+    color: var(--mainBlue);
+}
+#education {
+    height: 750px;
+}
