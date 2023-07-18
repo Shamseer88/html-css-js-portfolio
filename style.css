@@ -383,21 +383,46 @@ section {
     grid-template-columns: repeat(3, 1fr);
     gap: 25px;
 }
-.portfolio-card {
-    text-align: center;
-    cursor: pointer;
-    border-radius: 15px;
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: var(--mainBlue);
+    border-radius: 6px;
 }
-.portfolio-card img {
-    width: 275px;
-    border-radius: 15px 15px 0 0;
-    padding-bottom: 0px;
-    background-color: lightgray;
+.text {
+    color: white;
+    font-size: 13px;
+    position: absolute;
+    padding: 30px;
+    text-align: justify;
+  }
+
+.portfolio-card:hover .overlay {
+    opacity: 1;
 }
-.portfolio-info {
-    width: 275px;
-    margin: auto;
-    border-radius: 0 0 15px 15px;
-    background-color: lightgray;
-    padding: 10px 0;
+
+.link-btn {
+    background-color: var(--theOrange);
+    border: none;
+    margin-right: 10px;
+}
+.link-btn:hover {
+    background-color: white;
+    color: var(--theOrange);
+}
+.portfolio-card-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+}
+.portfolio-card-text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
 }
