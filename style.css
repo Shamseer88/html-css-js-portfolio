@@ -540,6 +540,16 @@ section {
     grid-template-columns: repeat(3, 1fr);
     gap: 25px;
 }
+@media only screen and (max-width: 1450px) {
+    .portfolio-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media only screen and (max-width: 770px) {
+    .portfolio-cards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
 .overlay {
     position: absolute;
     top: 0;
