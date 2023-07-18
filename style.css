@@ -132,9 +132,7 @@ main {
 .container {
     margin-left: 400px;
     margin-top: 50px;
-    margin-right: auto;
-    margin-bottom: 50px;
-    width: 90%;
+    width: 100%;
     border-radius: 30px;
     scroll-behavior: smooth;
 }
@@ -175,6 +173,16 @@ main {
     }
     .container {
         margin: auto;
+    }
+}
+@media only screen and (max-width: 400px) {
+    #responsive-menu h2 {
+        font-size: 16px;
+    }
+}
+@media only screen and (max-width: 400px) {
+    #responsive-menu h2 {
+        font-size: 15px;
     }
 }
 
@@ -259,6 +267,13 @@ main {
     scale: 1.02;
     transition: 0.3s;
 }
+
+
+@media only screen and (max-width: 1200px) {
+    #home {
+        height: 500px;
+    }
+}
 @media only screen and (max-width: 800px) {
     #home h1{
         font-size: 35px;
@@ -285,7 +300,19 @@ main {
         font-size: 28px;
     }
 }
-
+@media only screen and (max-width: 400px) {
+    #home h1 {
+        font-size: 20px;
+    }
+    #home p{
+        font-size: 12px;
+    }
+    .download-resume{
+        font-size: 13px;
+    }
+    .hire-me{
+        font-size: 13px;
+    }
 /* About section */
 #about {
     background-color: white;
