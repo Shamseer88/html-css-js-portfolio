@@ -276,6 +276,10 @@ main {
     cursor: pointer;
     margin-right: 15px;
 }
+.view-portfolio a{
+    color: white;
+    text-decoration: none;
+}
 .view-portfolio:hover {
         background-color: var(--mainBlue);
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 10px;
@@ -294,6 +298,10 @@ main {
     font-family: 'Poppins', sans-serif;
     cursor: pointer;
     color: white;
+}
+.hire-me-about a{
+    color: white;
+    text-decoration: none;
 }
 .hire-me-about i {
     margin-right: 5px;
