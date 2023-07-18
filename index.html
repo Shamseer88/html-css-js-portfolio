@@ -50,8 +50,8 @@
                     <h1>I'm Shamseer Ali<span>.</span></h1>
                     <p>Proficient in HTML, CSS, and JavaScript.</p>
                     <div class="buttons-div">
-                        <button class="download-resume"><i class="fa-solid fa-download"></i> Download Resume</button>
-                        <button class="hire-me"><i class="fa-solid fa-envelope"></i> Hire me</button>
+                        <button class="download-resume" ><a href="documents/resume.pdf" target="_blank"><i class="fa-solid fa-download"></i> Download Resume</a></button>
+                        <button class="hire-me"><a href="#contact"><i class="fa-solid fa-envelope"></i> Hire me</a></button>
                     </div>
                 </div>
             </section>
@@ -176,10 +176,45 @@
             <!-- Contact me section -->
             <section id="contact">
                 <div class="about-heading">
-                    <h2 class="sub-heading">Contact Me</h2>
+                    <h2 class="sub-heading">Get in touch</h2>
                     <div class="dividor"></div>
                 </div>
+                <div class="contact-container">
+                    <div class="contact-container-left">
+                        <div class="contact-details">
+                            <i class="fa-solid fa-phone"></i>
+                            <div class="contact-info">
+                                <h5>Phone</h5>
+                                <p>+91 9645887798</p>
+                            </div>
+                        </div>
+                        <div class="contact-details">
+                            <i class="fa-solid fa-envelope"></i>
+                            <div class="contact-info">
+                                <h5>Email</h5>
+                                <p>alishamseer@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-details">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <div class="contact-info">
+                                <h5>Location</h5>
+                                <p>Kerala, India</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-container-right">
+                        <form>
+                            <input type="text" id="name" placeholder="Your name">
+                            <input type="email" name="email" id="email" placeholder="Email address">
+                            <input type="text" id="subject" placeholder="Subject">
+                            <textarea name="textarea" id="textarea" cols="30" rows="5" placeholder="Message"></textarea>
+                            <button type="submit" class="submit-btn"><i class="fa-solid fa-location-arrow"></i> Send message</button>
+                        </form>
+                    </div>
+                </div>
             </section>
+            <hr>
         </div>
     </main>
     <script src="script.js"></script>
