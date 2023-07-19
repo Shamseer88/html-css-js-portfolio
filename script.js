@@ -1,3 +1,4 @@
+// Portfolio section populating
 const portfolios = [
   {
     id: 1,
@@ -111,4 +112,21 @@ portfolios.forEach(function(portfolio) {
     websiteIcon.className = 'fa-solid fa-link';
     websiteLink.appendChild(websiteIcon);
   })
+})
+
+// Responsive menu
+const menuIcon = document.querySelector('.menu-icon');
+menuIcon.addEventListener('click', function() {
+  const sidebar = document.querySelector('.sidebar');
+  sidebar.style.display = 'block';
+  sidebar.style.zIndex = 999;
+
+  const closeBtn = document.querySelector('.close-btn');
+  closeBtn.style.display = 'block'
+})
+
+const closeBtn = document.querySelector('.close-btn');
+closeBtn.addEventListener('click', function() {
+  const sidebar = document.querySelector('.sidebar');
+  sidebar.style.display = 'none';
 })
