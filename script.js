@@ -20,21 +20,21 @@ const portfolios = [
   },
   {
     id: 3,
-    title: 'My Portfolio',
+    title: 'Review Carousal',
     tech: 'HTML, CSS, JavaScript',
-    description: 'This project is a visually stunning portfolio website showcasing my work and skills. Built using HTML, CSS, and JavaScript, it provides an interactive and engaging experience for visitors.',
-    git: 'https://github.com/Shamseer88/html-css-js-portfolio',
-    websiteLink: 'https://shamseer88.github.io/html-css-js-portfolio/',
-    image: 'images/my-portfolio.png'
+    description: 'Review Carousal is an engaging project that allows users to cycle through reviews using intuitive navigation: next and previous buttons for sequential browsing and a random button for a surprising twist.',
+    git: 'https://github.com/Shamseer88/review-carousal',
+    websiteLink: 'https://shamseer88.github.io/review-carousal/',
+    image: 'images/review.png'
   },
   {
     id: 4,
-    title: 'Counter App',
-    tech: 'HTML, CSS, JavaScript',
-    description: 'This app, developed using HTML, CSS, and JavaScript, features interactive buttons that increment, decrement, and reset a displayed number. It provides a user-friendly interface for manipulating values with ease.',
-    git: 'https://github.com/Shamseer88/counter-javascript',
-    websiteLink: 'https://shamseer88.github.io/counter-javascript/',
-    image: 'images/counter-app.png'
+    title: 'Spotify Landing Page',
+    tech: 'HTML, CSS',
+    description: "Crafted with HTML and CSS, it brings the essence of Spotify's interface to all devices, creating an immersive and user-friendly experience.",
+    git: 'https://github.com/Shamseer88/Spotify-Landing-Page',
+    websiteLink: 'https://shamseer88.github.io/Spotify-Landing-Page/',
+    image: 'images/spotify.png'
   },
   {
     id: 5,
