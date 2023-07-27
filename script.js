@@ -130,3 +130,22 @@ closeBtn.addEventListener('click', function() {
   const sidebar = document.querySelector('.sidebar');
   sidebar.style.display = 'none';
 })
+
+// Dark Mode
+if (localStorage.getItem('darkMode') === null) {
+  localStorage.setItem('darkMode', "false");
+}
+function toggleDarkMode() {
+  const isDarkMode = localStorage.getItem('darkMode') === "true";
+  const newDarkModeValue = !isDarkMode;
+  localStorage.setItem('darkMode', newDarkModeValue.toString());
+
+  const themeLink = document.getElementById('theme-link');
+  themeLink.href = newDarkModeValue ? 'dark.css' : 'style.css';
+}
+const darkModeButton = document.querySelector('.dark-toggle-btn');
+darkModeButton.addEventListener('click', toggleDarkMode);
+
+const link = document.createElement('link');
+link.rel = 'stylesheet';
+document.getElementsByTagName('HEAD')[0].appendChild(link);

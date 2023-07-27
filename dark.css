@@ -9,9 +9,9 @@
     box-sizing: border-box;
 }
 :root {
-    --mainBlue: #4A63E7;
-    --theOrange: #FF5959;
-    --mainBg: #E7E7E7;
+    --mainBlue: #454545;
+    --theOrange: #000;
+    --mainBg: #000;
 }
 
 html {
@@ -72,6 +72,7 @@ main {
     text-transform: uppercase;
     font-size: 12px;
     font-weight: 400;
+    color: #fff;
 }
 
 .menu {
@@ -122,7 +123,7 @@ main {
     transition: 0.3s;
 }
 .footer p {
-    color: var(--mainBg);
+    color: lightgray;
     font-size: 12px;
 }
 
@@ -206,9 +207,9 @@ main {
     position: relative;
 }
 .dark-toggle-btn {
-    /* color: black; */
+    color: white;
     font-size: 25px;
-    border: 1px solid black;
+    border: 1px solid white;
     padding: 5px;
     border-radius: 50%;
     position: absolute;
@@ -228,6 +229,7 @@ main {
 }
 #home p {
     text-align: left;
+    color: #fff;
 }
 #home .home-info p {
     color: white;
@@ -335,7 +337,7 @@ main {
 }    
 /* About section */
 #about {
-    background-color: white;
+    /* background-color: white; */
     border-radius: 30px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     padding: 75px;
@@ -370,7 +372,7 @@ main {
 .dividor {
     height: 4px;
     width: 40px;
-    background-color: var(--theOrange);
+    background-color: #fff;
     border-radius: 30px;
     margin-bottom: 30px;
 }
@@ -388,7 +390,7 @@ main {
 }
 .about-info .about-me-description {
     font-size: 14px;
-    color: #888888;
+    color: #fff;
     margin-bottom: 30px;
 }
 .personal-info {
@@ -398,7 +400,7 @@ main {
 }
 .personal-info p {
     font-size: 14px;
-    color: black;
+    color: white;
 }
 .personal-info p span {
     color: #888888
@@ -432,7 +434,7 @@ main {
 }
 .hire-me-about {
     padding: 10px 26px;
-    background-color: var(--mainBlue);
+    background-color: var(--theOrange);
     border-radius: 25px;
     border: none;
     font-size: 16px;
@@ -448,7 +450,7 @@ main {
     margin-right: 5px;
 }
 .hire-me-about:hover {
-    background-color: var(--theOrange);
+    background-color: var(--mainBlue);
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 10px;
     scale: 1.02;
     transition: 0.3s;
@@ -487,6 +489,8 @@ section {
     padding: 75px;
     margin-bottom: 50px;
     margin-bottom: 50px;
+    background-color: var(--mainBlue);
+    color: #fff;
 }
 @media only screen and (max-width: 1000px) {
     section {
@@ -505,7 +509,7 @@ section {
 }
 .paragraph {
     font-size: 14px;
-    color: #888888;
+    color: #fff;
     margin-bottom: 30px;
 }
 .skills-grid {
@@ -522,7 +526,7 @@ section {
     font-size: 14px;
 }
 .skill-progress p{
-    color: #888888;
+    color: #fff;
     font-size: 14px;
 }
 .outer-line {
@@ -564,7 +568,7 @@ section {
     margin-bottom: 10px;
 }
 .education-info p {
-    color: #888888;
+    color: #fff;
     font-size: 14px;
 }
 
@@ -618,14 +622,20 @@ section {
     background-color: white;
     color: var(--theOrange);
 }
+.card-body {
+    background-color: var(--mainBlue);
+    border-radius:0  0 6px 6px;
+}
 .portfolio-card-title {
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
     font-weight: 600;
+    color: #fff;
 }
 .portfolio-card-text {
     font-family: 'Open Sans', sans-serif;
     font-size: 13px;
+    color: #fff;
 }
 
 /* Contact section */
@@ -700,7 +710,7 @@ input:focus {
     transition: 0.3s
 }
 .contact-details i{
-    color: var(--theOrange);
+    color: white;
     font-size: 22px;
 }
 .contact-info h5 {
