@@ -38,21 +38,21 @@ const portfolios = [
   },
   {
     id: 5,
-    title: 'My Portfolio',
+    title: 'Weather Update',
     tech: 'HTML, CSS, JavaScript',
-    description: 'This project is a visually stunning portfolio website showcasing my work and skills. Built using HTML, CSS, and JavaScript, it provides an interactive and engaging experience for visitors.',
-    git: 'https://github.com/Shamseer88/html-css-js-portfolio',
-    websiteLink: 'https://shamseer88.github.io/html-css-js-portfolio/',
-    image: 'images/my-portfolio.png'
+    description: 'Our web app uses HTML, CSS, and JavaScript to display real-time weather data for any city. Enjoy a visually appealing interface with temperature, humidity, wind speed, and atmospheric pressure information.',
+    git: 'https://github.com/Shamseer88/weather-app',
+    websiteLink: 'https://shamseer88.github.io/weather-app/',
+    image: 'images/weather-app.png'
   },
   {
     id: 6,
-    title: 'Counter App',
+    title: 'To-Do List',
     tech: 'HTML, CSS, JavaScript',
-    description: 'This app, developed using HTML, CSS, and JavaScript, features interactive buttons that increment, decrement, and reset a displayed number. It provides a user-friendly interface for manipulating values with ease.',
-    git: 'https://github.com/Shamseer88/counter-javascript',
-    websiteLink: 'https://shamseer88.github.io/counter-javascript/',
-    image: 'images/counter-app.png'
+    description: 'Todo List app! Built with HTML, CSS, and JavaScript, it allows you to add and delete todos. Your data is stored in the browser, ensuring seamless access across sessions. ',
+    git: 'https://github.com/Shamseer88/todo-list',
+    websiteLink: 'https://shamseer88.github.io/todo-list/',
+    image: 'images/todo-list.png'
   }
 ]
 
